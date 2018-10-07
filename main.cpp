@@ -4,6 +4,8 @@
 #include <QTextStream>
 #include <QDebug>
 
+#include <array>
+
 enum class FieldType { EMPTY, CIRCLE, CROSS };
 
 char fieldTypeLetter(const FieldType fieldType)
@@ -230,7 +232,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    QDir dir("tictactoe");
+    QDir dir("htdocs");
     dir.removeRecursively();
     dir.mkpath(dir.absolutePath());
 
