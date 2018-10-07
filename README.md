@@ -16,5 +16,5 @@ cd build_DbSoftware
 qmake CONFIG+=ccache ../DbSoftware
 make -j$(nproc) sub-DbTictactoe
 make sub-DbTictactoe-install_subtargets
-./bin/serialserver
+./bin/tictactoe
 ```
