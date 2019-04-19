@@ -11,4 +11,4 @@ set(SOURCES
 
 add_executable(tictactoe ${HEADERS} ${SOURCES})
 
-target_link_libraries(tictactoe Qt5::Core)
+target_link_libraries(tictactoe stdc++ Qt5::Core)
